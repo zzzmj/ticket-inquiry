@@ -1,0 +1,21 @@
+.detail-item .item {
+    padding: 0px;
+}
+
+.detail-item-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item-img span {
+    width: 2px;
+}
+
+.detail-item-from {
+    padding-top: 0
+}
+
+.detail-item-to {
+    padding-bottom: 0
+}
+

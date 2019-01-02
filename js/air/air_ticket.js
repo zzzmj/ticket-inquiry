@@ -49,7 +49,6 @@ var template = function(ticket, seat, second) {
 
         </div>
     `
-    console.log('模板', t);
     return t
 }
 
@@ -78,6 +77,5 @@ var getTicket = function(r, ticket) {
         spend: r.spend,
         price: r.price
     }
-    console.log('ticket: ', o);
     return o
 }

@@ -21,16 +21,15 @@ var getPath = function(o) {
         path = `http://192.168.1.31:8000/flight_data_ajax/?depCity=${o.from}&arrCity=${o.to}&date=${o.goDate}`
     } else if(flag == 'train'){
         path = `http://192.168.1.31:8000/train_data_ajax/?date=${o.goDate}&from_station=${o.from}&to_station=${o.to}`
+    } else {
+        path = `http://192.168.1.31:8000/bus_data_ajax/?date=${o.goDate}&depCity=${o.from}&arrCity=${o.to}`
     }
     return path
 }
 
 var ariTrainBus = function() {
-    if($('.air-info-wrap').text().trim() == '国内') {
-        return "air"
-    } else {
-        return "train"
-    }
+    var type = $('.container-header').data('type')
+    return type
 }
 
 var indexMain = function() {
@@ -44,7 +43,6 @@ var indexMain = function() {
 
     let idFrom = $('#id-from')
     idFrom.on('click', function() {
-        console.log('click id from');
         $('.container').hide()
         $('.citys-body .row').hide()
         $('.city-component-loc').text('出发城市')
@@ -67,10 +65,6 @@ var indexMain = function() {
         $('#city-component').addClass('city-component-active')
     })
 
-    $('.startDate').on('input', function() {
-        console.log('日期的值：', $('.startDate').val());
-    })
-
     // 日期默认填入当前日期
     $('.startDate').val(getTime())
 
@@ -81,6 +75,9 @@ var indexMain = function() {
     } else if (ariTrainBus() == "air") {
         $('#id-from').val('北京')
         $('#id-to').val('上海')
+    } else {
+        $('#id-from').val('修水')
+        $('#id-to').val('南昌') 
     }
     $('.sk-circle').hide()
 }

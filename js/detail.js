@@ -152,7 +152,6 @@ var bindEvents = function() {
             $('.detail-header-time').text(preDay)
             let v = init()
             let path = getPath(v)
-            console.log('上一天ajax请求数据', v, path);
             ajax(path, v)
             $("body,html").animate({scrollTop:0},1000)
         }
@@ -166,15 +165,12 @@ var bindEvents = function() {
         $('.detail-header-time').text(nextDay)
         let v = init()
         let path = getPath(v)
-        console.log('下一天ajax请求数据', v, path);
         ajax(path, v)
         $("body,html").animate({scrollTop:0},1000)
     })
 }
 
 var ajax = function(path, info) {
-    console.log('访问ajax路径是: ', path);
-    console.log('主页面传过来的信息：', info);
     $('.detail-body').empty()
     init()
     $.ajax({
@@ -216,7 +212,6 @@ var ajax = function(path, info) {
             }
         },
         error: function(status) {
-            console.log(status);
             $('.container-header').append(`
             <div class="row">
                 <div class="col" style="background: #ffbfbf; border-radius: .1rem;">
@@ -291,7 +286,6 @@ var ajax = function(path, info) {
                 }
             })
         }
-        console.log('显示');
     })
 }
 
