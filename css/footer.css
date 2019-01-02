@@ -1,0 +1,22 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrap li {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(49, 67, 93, 0.9);;
+    padding: .8rem;
+}
+
+.footer-wrap li.active {
+    background-color: rgba(19, 34, 57, 0.9);
+}

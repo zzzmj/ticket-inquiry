@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.header-view,
+.header-time {
+    background-color: #19a0f0;
+    padding: .6rem 0;
+}
+
+.header-view span {
+    color: #FFF;
+    font-size: 1.3rem;
+}
+
+.header-time span {
+    color: #FFF;
+    font-size: .9rem;
+}
+
+.header-time {
+    padding-bottom: .3rem !important;
+}
+
+.detail-header {
+    height: 90px;
+}
+
+.detail-header-time {
+    background-color: #19a0f0;
+    color: #FFF;
+}
+
+.detail-body {
+    background-color: #f5f5f5;
+    margin-top: 100px;
+}
+
+.detail-body {
+    padding: 0;
+}
+
+.detail-body .first {
+    padding: .5rem 1rem 1rem;
+}
+
+.detail-body .row {
+    margin: .9rem 0;
+}
+
+
+.detail-item {
+    background-color: #FFF;
+    padding: 10px;
+}
+
+.col-3 {
+    padding: 0px;
+}
+
+.detail-item-start {
+    color: #19a0f0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.detail-item-end {
+    font-size: 1.4rem;
+}
+
+.detail-item-from,
+.detail-item-to {
+    font-size: 1rem;
+    line-height: 1.35rem;
+    padding: 0.3rem 0;
+    font-family: Arial;
+}
+
+.detail-item-seat {
+    font-family: Arial;
+    font-size: 0.6rem;
+    color: #666;
+}
+
+.detail-item-seat span {
+    font-size: 1.2rem;
+}
+
+.detail-item-mid {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.detail-item-mid-money {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.detail-item-img {
+    display: flex;
+}
+
+.detail-item-img i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #e5e5e5;
+    border-radius: 50%;
+}
+
+.detail-item-img span {
+    height: 2px;
+    background: #f0f0f0;
+    width: 1rem;
+    flex: 2;
+}
+
+.detail-item-spend,
+.detail-item-num {
+    font-size: .8rem;
+}
+
+.detail-item-money {
+    display: none;
+}
+
+
+
+.detail-item-air-money span {
+    font-size: 1.2rem;
+    color: #ff6913;
+    font-weight: bold;
+}
+
+.detail-item-air-money i {
+    font-size: .8rem;
+}

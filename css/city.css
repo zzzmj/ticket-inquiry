@@ -1,0 +1,54 @@
+#city-component {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transform: translateX(100%);
+    z-index: 10000;
+    transition: all 0.5s;
+    background: #ffffff;
+}
+
+.city-component-active {
+    transform: translateX(0%) !important;
+}
+
+.citys-header {
+    height: 100px;
+}
+
+.citys-hot {
+    margin-top: 112px;
+}
+
+.citys-hot .hot-item {
+    padding: .1rem .5rem;
+}
+
+.citys-hot .hot-item-wrap {
+    background: #f5f5f5;
+    padding: .5rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.citys-hot .hot-item-wrap:hover {
+    background: #d5d3d3;
+}
+
+.citys-body {
+    margin-top: 112px;
+}
+
+.citys-body .row~.row {
+    padding: 0;
+}
+
+.citys-body .row {
+    background: #ffffff !important;
+    padding: .6rem !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+.citys-body > .row {
+    display: none;
+}
