@@ -26,6 +26,9 @@
 ![](https://ws1.sinaimg.cn/large/006PpBLogy1fys1v485yrg30ag0jm7wh.jpg)
 
 
+- 日历组件
+  ![](http://ww1.sinaimg.cn/large/006PpBLoly1g4kfo5vpjpj309o0jdt9g.jpg)
+
 
 - 火车票首页
 
@@ -38,6 +41,6 @@
 
 
 
-- 飞机票首页
+- 汽车票首页
 
-  ![](C:\Users\1\AppData\Roaming\Typora\typora-user-images\1546397780315.png)
+  ![](http://ww1.sinaimg.cn/large/006PpBLoly1g4kfqjfmjkj308g0gvdgr.jpg)
